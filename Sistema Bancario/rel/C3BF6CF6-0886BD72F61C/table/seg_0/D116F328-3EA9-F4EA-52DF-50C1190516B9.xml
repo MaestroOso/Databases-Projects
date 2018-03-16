@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D116F328-3EA9-F4EA-52DF-50C1190516B9" name="Usuario">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Esta es la informacion básica de un usuario de la página.</comment>
+<generatorID>25ECED73-9235-C229-5D7D-F0CC57F4086D</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Usuario" id="43174B63-201B-A176-0023-C862C2150472">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Es el id que identifica al usuario</comment>
+<generatorID>9C1A00B7-58A4-47A7-B3CF-D7FCCCD318B3</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="DAF92F45-A775-9FCA-BC1D-0143B5B5A98E">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Es el nombre que el usuario escoge al registrarse en la pagina</comment>
+<generatorID>8326123D-7329-75FB-9855-E669AAF38AF9</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="4AE8F373-92B6-5D78-17AE-747E5AA19646">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Es el numero de telefono del usuario</comment>
+<generatorID>3968C18D-E407-005C-DFB6-34F5A6B02181</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Correo" id="8F5E3628-1B6A-D480-E2C1-591D0C82ACB9">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Es el correo con el que se registra el usuario. (Gmail)</comment>
+<generatorID>8B0CD211-2FD6-71A4-2937-9B31F22945A2</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="425182A2-D37E-DC64-8351-CB4264A990B2">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Representa el estado del usuario en el servidor. Online o Offline.&lt;br/&gt;Un valor de Verdadero representa que el usuario esta registrado en el servidor y uno de Falso lo contrario.</comment>
+<generatorID>1EA6BC3E-E0A3-DD5B-86D0-F58300292FC4</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Balance" id="44B11429-5003-7C41-4F88-6522A04A1120">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Guarda y Actualiza el balance del usuario cada vez que se realiza una transacción</comment>
+<generatorID>B1443E7C-C589-3EB1-8CEC-A01DAC3C4D6E</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cuenta_PayPal" id="201F29F6-E662-0CC2-16A9-A9EB15ABBD15">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>0 representa que el usuario no ha registrado su cuenta&lt;br/&gt;cualquier otro numero representa el numero de su cuenta de paypal</comment>
+<generatorID>2DADD1F0-C285-CAD9-DC68-4A0C5B4BA9E2</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CostoMiembro" id="C0F2DAB5-4D80-73D7-0E48-BD3543BDC079">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>8BD48B38-5E60-DAA3-B6EF-D862A1CF7FBF</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>9C5D802B-E394-3F20-0A07-843715520C28</dependOnForeignKeyID>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5256396E-5CF5-82B8-DAB0-78B9B58CDF35" name="Usuario_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>7098801B-E684-0017-862E-59D85347AFAC</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43174B63-201B-A176-0023-C862C2150472"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B43C9105-7767-12C9-DE30-BBC2D3C31F05" name="Miembros_Transaccionv1">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>D1435179-7B61-BBEB-942F-83D26CE8E03A</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="320BE321-7001-251C-8C16-8DAB69127D27" name="Responsablesv1">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>56A447C4-B5C8-3394-DE1E-000B28276E88</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="1723C419-7527-7C16-0BB4-7A4CA3A1EDF0" name="Usuarios_X_Grupov1">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>C74617BA-2824-1413-5A15-599E1CA5E927</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

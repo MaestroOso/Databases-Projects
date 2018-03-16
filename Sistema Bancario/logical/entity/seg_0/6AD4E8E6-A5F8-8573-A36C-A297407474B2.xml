@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6AD4E8E6-A5F8-8573-A36C-A297407474B2" name="Grupo">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:40:13 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nombre_Grupo" id="9EAC79A0-E5AA-931B-EEB1-7F9680DA6CED">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:40:44 UTC</createdTime>
+<comment>Representa el nombre del grupo</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Usuario" id="4AF136BD-7776-514E-474F-7054AA2DDE21">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:25:25 UTC</createdTime>
+<generatorID>5943ABEF-33D9-D9C6-DC23-1F7B2EC8BE64</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<referedAttribute>9C1A00B7-58A4-47A7-B3CF-D7FCCCD318B3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado del Grupo" id="820BEE23-6524-2705-65B4-8758403938BB">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:41:57 UTC</createdTime>
+<comment>Representa el estado del grupo&lt;br/&gt;1. Activo y funcionando&lt;br/&gt;2. Grupo Desarmado&lt;br/&gt;3. Detener Grupo y Reconciliarlo</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6FE6479C-F5E2-673F-E67A-F7676B284A84" name="Grupo PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:40:49 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9EAC79A0-E5AA-931B-EEB1-7F9680DA6CED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

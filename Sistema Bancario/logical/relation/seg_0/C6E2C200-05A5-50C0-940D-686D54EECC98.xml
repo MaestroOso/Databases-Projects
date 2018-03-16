@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Cuentas_X_Grupo" directorySegmentName="seg_0" id="C6E2C200-05A5-50C0-940D-686D54EECC98">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:59:57 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<sourcePk>6FE6479C-F5E2-673F-E67A-F7676B284A84</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6AD4E8E6-A5F8-8573-A36C-A297407474B2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9BAD4F92-4232-F825-24B2-9EDDBC27AD3A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

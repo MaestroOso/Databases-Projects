@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="25ECED73-9235-C229-5D7D-F0CC57F4086D" name="Usuario">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:37:22 UTC</createdTime>
+<comment>Esta es la informacion básica de un usuario de la página.</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Usuario" id="9C1A00B7-58A4-47A7-B3CF-D7FCCCD318B3">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:25:11 UTC</createdTime>
+<comment>Es el id que identifica al usuario</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre " id="8326123D-7329-75FB-9855-E669AAF38AF9">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:38:02 UTC</createdTime>
+<comment>Es el nombre que el usuario escoge al registrarse en la pagina</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefono" id="3968C18D-E407-005C-DFB6-34F5A6B02181">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:26:35 UTC</createdTime>
+<comment>Es el numero de telefono del usuario</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Correo" id="8B0CD211-2FD6-71A4-2937-9B31F22945A2">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:37:51 UTC</createdTime>
+<comment>Es el correo con el que se registra el usuario. (Gmail)</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="1EA6BC3E-E0A3-DD5B-86D0-F58300292FC4">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:38:29 UTC</createdTime>
+<comment>Representa el estado del usuario en el servidor. Online o Offline.&lt;br/&gt;Un valor de Verdadero representa que el usuario esta registrado en el servidor y uno de Falso lo contrario.</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Balance" id="B1443E7C-C589-3EB1-8CEC-A01DAC3C4D6E">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:39:31 UTC</createdTime>
+<comment>Guarda y Actualiza el balance del usuario cada vez que se realiza una transacción</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cuenta PayPal" id="2DADD1F0-C285-CAD9-DC68-4A0C5B4BA9E2">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:22:40 UTC</createdTime>
+<comment>0 representa que el usuario no ha registrado su cuenta&lt;br/&gt;cualquier otro numero representa el numero de su cuenta de paypal</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7098801B-E684-0017-862E-59D85347AFAC" name="usuario PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:37:59 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C1A00B7-58A4-47A7-B3CF-D7FCCCD318B3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

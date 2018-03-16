@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TiposdeGastos" directorySegmentName="seg_0" id="E7BC9FF3-1502-E4FA-0F19-9E0EA6EAFD4E">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:03:33 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<sourcePk>B4DD6C4D-7A61-F42F-0FD1-CAEE0C9DD5F3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>00917773-148C-58E6-82B2-2D57C0EC97DE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9BAD4F92-4232-F825-24B2-9EDDBC27AD3A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="86A5E3C6-69D7-1DCD-2D6B-5858D08A6159" name="Tipo_Gasto">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>00917773-148C-58E6-82B2-2D57C0EC97DE</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NombreTipo" id="943B36C7-6062-B231-DCF8-1CD75BA73795">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Guarda cada uno de los tipos de gastos posibles para las Bills</comment>
+<generatorID>5B8CC500-0D8F-FDA9-D053-70988F338F0E</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A82A89E8-A119-685C-18EE-7AE8D3E7CE36" name="Tipo_Gasto_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>B4DD6C4D-7A61-F42F-0FD1-CAEE0C9DD5F3</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="943B36C7-6062-B231-DCF8-1CD75BA73795"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

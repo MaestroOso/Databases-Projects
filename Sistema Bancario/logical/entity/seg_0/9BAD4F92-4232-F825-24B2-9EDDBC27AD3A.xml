@@ -1,0 +1,211 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9BAD4F92-4232-F825-24B2-9EDDBC27AD3A" name="Bill">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:41:29 UTC</createdTime>
+<comment>Esta entidad representa una factura</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Bill" id="35D3F1B0-901D-D1CC-0608-CDB117D4F218">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:35:51 UTC</createdTime>
+<comment>Numero que identifica la cuenta</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NombreCuenta" id="F2A5D56C-A070-22C6-138F-99055299D429">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:41:52 UTC</createdTime>
+<comment>Nombre de la cuenta</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Costo" id="4EDF6658-EA15-8136-4A19-A70E8D362EB8">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:42:05 UTC</createdTime>
+<comment>Costo total de la factura</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado_Cuenta" id="78E0D7BC-63D3-3DE2-25E2-581C2432CFA0">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:53:28 UTC</createdTime>
+<comment>Representa si la deuda ya fue cancelada o no.&lt;br/&gt;1. representa que la cuenta ya fue cancelada&lt;br/&gt;0. representa que la cuenta no ha sido cancelada</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ImagenFactura" id="8DF19E91-916C-3FDE-EAC2-D88C388A329D">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:42:19 UTC</createdTime>
+<comment>Imagen de la factura para sustentar la misma</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Lugar" id="F93A73FC-460A-4D1B-6DE6-A92830CA62C6">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:43:07 UTC</createdTime>
+<comment>Lugar donde se realizó la factura</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Aprobacion" id="CF3CB6C2-632B-E1F4-73C2-B5F573B4F05E">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:07:40 UTC</createdTime>
+<comment>Representa si la cuenta  ha sido aprobada por el lider del grupo.&lt;br/&gt;1. Ya fue aprobada por el lider del grupo&lt;br/&gt;0. No ha sido aprobada por el lider del grupo.</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comentarios" id="B1433854-DA4B-595C-CD15-A18E5D58E854">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:45:36 UTC</createdTime>
+<comment>Comentarios adicionales acerca de la factura</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="FA39AE4B-F05A-5F7C-2CD4-CCAEBA259878">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:45:50 UTC</createdTime>
+<comment>Fecha en que se realizó la factura</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Usuario" id="9347BE54-0462-7601-88E2-8905E757934D">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:25:25 UTC</createdTime>
+<comment>Es el ID del usuario que realizó la cuenta&lt;br/&gt;</comment>
+<generatorID>08F22272-B16F-4F07-AF29-217B61AA798C</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<referedAttribute>9C1A00B7-58A4-47A7-B3CF-D7FCCCD318B3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Grupo" id="012BC7EB-3D1D-F391-FF3C-1F1008C97F06">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:46:16 UTC</createdTime>
+<comment>Representa el nombre del grupo</comment>
+<generatorID>C6E2C200-05A5-50C0-940D-686D54EECC98</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<referedAttribute>9EAC79A0-E5AA-931B-EEB1-7F9680DA6CED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NombreTipo" id="C98CA021-D7B4-3DEA-7286-6CAB9F1590F5">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:03:33 UTC</createdTime>
+<comment>Guarda cada uno de los tipos de gastos posibles para las Bills</comment>
+<generatorID>E7BC9FF3-1502-E4FA-0F19-9E0EA6EAFD4E</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<referedAttribute>5B8CC500-0D8F-FDA9-D053-70988F338F0E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="647E9DFF-FB40-6E54-9063-6EF651C0A296" name="Bill PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:41:58 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>35D3F1B0-901D-D1CC-0608-CDB117D4F218</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

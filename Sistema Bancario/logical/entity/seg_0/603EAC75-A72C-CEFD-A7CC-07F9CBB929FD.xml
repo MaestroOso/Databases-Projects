@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="603EAC75-A72C-CEFD-A7CC-07F9CBB929FD" name="Transaccion">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:46:02 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Transaccion" id="3F0B0BB1-B48A-A60B-121D-C2A74034B64B">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:46:09 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="8362B320-03A9-C925-2879-3EB374257C51">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:46:54 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="42B85B79-0EBE-A3BF-D9ED-697A86434071">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:47:10 UTC</createdTime>
+<comment>Representa si la transacción ha sido aprobada por el lider del grupo.&lt;br/&gt;1. Ya fue aprobada por el lider del grupo&lt;br/&gt;0. No ha sido aprobada por el lider del grupo.</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Usuario" id="62FE0ABD-D3DC-D335-FDBF-5DC803242568">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:25:25 UTC</createdTime>
+<comment>Usuario que crea la transacción.</comment>
+<generatorID>3DC76BB5-4DA0-CD3E-7843-C951A0488567</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<referedAttribute>9C1A00B7-58A4-47A7-B3CF-D7FCCCD318B3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Grupo" id="6C12346D-FD85-0142-04B7-3858B18B8CA5">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:46:16 UTC</createdTime>
+<comment>Representa el nombre del grupo</comment>
+<generatorID>058A0303-4021-7921-2A30-AEF41C09C127</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<referedAttribute>9EAC79A0-E5AA-931B-EEB1-7F9680DA6CED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Lugar" id="6BE66CD5-5F87-1ACA-5460-7E5760B098A9">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 14:57:18 UTC</createdTime>
+<comment>Lugar donde se realizó la transacción</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A172957C-FDE2-9D98-98E0-1A6DB209FE89" name="Transaccion PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:46:11 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3F0B0BB1-B48A-A60B-121D-C2A74034B64B</attributeRef>
+<attributeRef>62FE0ABD-D3DC-D335-FDBF-5DC803242568</attributeRef>
+<attributeRef>6C12346D-FD85-0142-04B7-3858B18B8CA5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2ACC5636-6F1C-7643-7A66-08D9334FE564" name="Transaccion">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>603EAC75-A72C-CEFD-A7CC-07F9CBB929FD</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Transaccion" id="40C63542-5D5C-148D-6091-34C35DC77BCC">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>3F0B0BB1-B48A-A60B-121D-C2A74034B64B</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="50F3870C-FC12-789C-0C47-6CDFE5858ABB">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>8362B320-03A9-C925-2879-3EB374257C51</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="C9DDAAA3-3633-96F3-51BB-5F97313C5551">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Representa si la transacción ha sido aprobada por el lider del grupo.&lt;br/&gt;1. Ya fue aprobada por el lider del grupo&lt;br/&gt;0. No ha sido aprobada por el lider del grupo.</comment>
+<generatorID>42B85B79-0EBE-A3BF-D9ED-697A86434071</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario_ID_Usuario" id="E3AB3E88-0A0E-4BC0-EA08-4444B1C0FAE5">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Usuario que crea la transacción.</comment>
+<generatorID>62FE0ABD-D3DC-D335-FDBF-5DC803242568</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0ABA0334-C721-9BDD-D9C0-70C78E37EA85" referredColumn="43174B63-201B-A176-0023-C862C2150472"/>
+</associations>
+</Column>
+<Column name="Grupo_Nombre_Grupo" id="3AC8FBFF-9724-E12E-6ADD-81A54FE4467E">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Representa el nombre del grupo</comment>
+<generatorID>6C12346D-FD85-0142-04B7-3858B18B8CA5</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="499E5183-D69E-F529-A092-C207FF0A9082" referredColumn="085F277D-1917-B748-DBC8-449895CA8F90"/>
+</associations>
+</Column>
+<Column name="Lugar" id="AFDEC88D-8B42-C8B4-B15E-CE12E9018EDE">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<comment>Lugar donde se realizó la transacción</comment>
+<generatorID>6BE66CD5-5F87-1ACA-5460-7E5760B098A9</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CostoMiembro" id="3265D0BF-E874-20BB-BAE3-86CE27996FA2">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>8BD48B38-5E60-DAA3-B6EF-D862A1CF7FBF</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>63C864B7-E7BA-A3E0-AC00-7392827C5418</dependOnForeignKeyID>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED78276F-A27D-1033-A3ED-D3962DAF0A25" name="Transaccion_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>A172957C-FDE2-9D98-98E0-1A6DB209FE89</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40C63542-5D5C-148D-6091-34C35DC77BCC"/>
+<colUsage columnID="E3AB3E88-0A0E-4BC0-EA08-4444B1C0FAE5"/>
+<colUsage columnID="3AC8FBFF-9724-E12E-6ADD-81A54FE4467E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFB9901E-BFB7-B423-46F3-0DEAA725C2C1" name="Transaccion_Usuario_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>3DC76BB5-4DA0-CD3E-7843-C951A0488567</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3AB3E88-0A0E-4BC0-EA08-4444B1C0FAE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C7C0102-DCAB-54A2-BA26-B400C7A4591F" name="Transaccion_Grupo_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>058A0303-4021-7921-2A30-AEF41C09C127</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AC8FBFF-9724-E12E-6ADD-81A54FE4467E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61D3C577-A566-927B-0120-713738C5F786" name="Miembros_Transaccion">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>D1435179-7B61-BBEB-942F-83D26CE8E03A</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

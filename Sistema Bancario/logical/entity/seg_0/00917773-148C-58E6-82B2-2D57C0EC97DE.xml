@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00917773-148C-58E6-82B2-2D57C0EC97DE" name="Tipo_Gasto">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:02:21 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NombreTipo" id="5B8CC500-0D8F-FDA9-D053-70988F338F0E">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:02:30 UTC</createdTime>
+<comment>Guarda cada uno de los tipos de gastos posibles para las Bills</comment>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B4DD6C4D-7A61-F42F-0FD1-CAEE0C9DD5F3" name="Tipo_Gasto PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:02:43 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5B8CC500-0D8F-FDA9-D053-70988F338F0E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

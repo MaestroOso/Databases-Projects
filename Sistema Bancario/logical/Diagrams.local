@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="main_view" objectID="7D07F768-3137-3846-3385-D98E6A86612C" name="Logical" visible="true"/>
+   <object objectType="sub_view" objectID="AD9DAACF-9353-6142-725C-A38D876973F6" name="Miembros de un grupo" visible="false"/>
+   <object objectType="sub_view" objectID="6B0E8EE6-DFB6-772D-57BC-A4929E80B414" name="TransaccionesUsuarioxGrupo" visible="false"/>
+   <object objectType="sub_view" objectID="2688D58D-8236-24F8-A536-44733A5B5052" name="VistaPorGrupos" visible="false"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

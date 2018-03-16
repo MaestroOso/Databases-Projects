@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="D08347D5-A52C-B202-9C14-38DF2DA9F5F5" name="Relational_1" visible="true"/>
+   <object objectType="sub_view" objectID="F3A4A502-45A1-68BA-31F7-C045943B3859" name="From_LM_Miembros de un grupo" visible="false"/>
+   <object objectType="sub_view" objectID="B4C97413-EE49-B3A6-961D-C69AA25257A5" name="From_LM_TransaccionesUsuarioxGrupo" visible="false"/>
+   <object objectType="sub_view" objectID="B960653B-8E88-1125-C5E3-F7CDE3A4A8E8" name="From_LM_VistaPorGrupos" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

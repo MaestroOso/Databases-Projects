@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7245AC3-C361-8059-86D0-F9FD8B228109" name="Usuarios_X_Grupo">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Usuario_ID_Usuario" id="30DAAC77-1CC5-A64D-4AE2-EF523F93E3B2">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDDD1F61-1C12-7F8B-02A3-F91C31D859E4" referredColumn="43174B63-201B-A176-0023-C862C2150472"/>
+</associations>
+</Column>
+<Column name="Grupo_Nombre_Grupo" id="09C1ABD2-C2EF-B5D9-7A90-6BD43FE9BA41">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C44E555-0DEF-D883-C877-27B171AB16C7" referredColumn="085F277D-1917-B748-DBC8-449895CA8F90"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7244E4FA-D946-AA1C-9310-231152722A91" name="Usuarios_X_Grupo_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30DAAC77-1CC5-A64D-4AE2-EF523F93E3B2"/>
+<colUsage columnID="09C1ABD2-C2EF-B5D9-7A90-6BD43FE9BA41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79FDC79D-72B4-60F7-6DFE-6784644EE500" name="FK_ASS_15">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>C74617BA-2824-1413-5A15-599E1CA5E927</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30DAAC77-1CC5-A64D-4AE2-EF523F93E3B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="479505B0-742E-3F1D-95E1-DC8C138B947E" name="FK_ASS_16">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>C74617BA-2824-1413-5A15-599E1CA5E927</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09C1ABD2-C2EF-B5D9-7A90-6BD43FE9BA41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

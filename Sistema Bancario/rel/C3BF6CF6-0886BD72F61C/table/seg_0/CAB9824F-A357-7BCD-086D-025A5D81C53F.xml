@@ -1,0 +1,239 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CAB9824F-A357-7BCD-086D-025A5D81C53F" name="Bill">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Esta entidad representa una factura</comment>
+<generatorID>9BAD4F92-4232-F825-24B2-9EDDBC27AD3A</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Bill" id="B6D51265-C7F8-7F8E-28A2-D1D6BAA02D9E">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Numero que identifica la cuenta</comment>
+<generatorID>35D3F1B0-901D-D1CC-0608-CDB117D4F218</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NombreCuenta" id="244158E2-A3A3-0D0E-1B22-4F8F6465886C">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Nombre de la cuenta</comment>
+<generatorID>F2A5D56C-A070-22C6-138F-99055299D429</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Costo" id="B6F4FA55-618C-9F9D-A512-EF6CB869CCE1">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Costo total de la factura</comment>
+<generatorID>4EDF6658-EA15-8136-4A19-A70E8D362EB8</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado_Cuenta" id="353B5C7D-2701-9B43-917C-774C1ECF7849">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Representa si la deuda ya fue cancelada o no.&lt;br/&gt;1. representa que la cuenta ya fue cancelada&lt;br/&gt;0. representa que la cuenta no ha sido cancelada</comment>
+<generatorID>78E0D7BC-63D3-3DE2-25E2-581C2432CFA0</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ImagenFactura" id="20914DE0-B690-46BE-4FB1-3F7BA30132F9">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Imagen de la factura para sustentar la misma</comment>
+<generatorID>8DF19E91-916C-3FDE-EAC2-D88C388A329D</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Lugar" id="EAA53BBE-2CD5-EC63-A0ED-418C4AF16073">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Lugar donde se realizó la factura</comment>
+<generatorID>F93A73FC-460A-4D1B-6DE6-A92830CA62C6</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Aprobacion" id="C729AF30-5154-9DE1-95B0-5F047B5F8A86">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Representa si la cuenta  ha sido aprobada por el lider del grupo.&lt;br/&gt;1. Ya fue aprobada por el lider del grupo&lt;br/&gt;0. No ha sido aprobada por el lider del grupo.</comment>
+<generatorID>CF3CB6C2-632B-E1F4-73C2-B5F573B4F05E</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comentarios" id="7C85DF84-223E-EC31-CC43-EC3B9FAACE8E">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Comentarios adicionales acerca de la factura</comment>
+<generatorID>B1433854-DA4B-595C-CD15-A18E5D58E854</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="A8F3904F-066B-CE7C-A016-910E42FE8B5C">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Fecha en que se realizó la factura</comment>
+<generatorID>FA39AE4B-F05A-5F7C-2CD4-CCAEBA259878</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario_ID_Usuario" id="E15C7DDF-6DE9-9B68-2F82-E9D21E9E1A62">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Es el ID del usuario que realizó la cuenta&lt;br/&gt;</comment>
+<generatorID>9347BE54-0462-7601-88E2-8905E757934D</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6F7C891-3061-6CC7-DB8D-C5722510AEBA" referredColumn="43174B63-201B-A176-0023-C862C2150472"/>
+</associations>
+</Column>
+<Column name="Grupo_Nombre_Grupo" id="4F52EA94-CBDC-7718-054B-D95DA9BAA190">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Representa el nombre del grupo</comment>
+<generatorID>012BC7EB-3D1D-F391-FF3C-1F1008C97F06</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1172C667-57B2-9A98-5530-E631393EE240" referredColumn="085F277D-1917-B748-DBC8-449895CA8F90"/>
+</associations>
+</Column>
+<Column name="Tipo_Gasto_NombreTipo" id="54930283-93BF-F433-4E4B-5AD4FD374667">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<comment>Guarda cada uno de los tipos de gastos posibles para las Bills</comment>
+<generatorID>C98CA021-D7B4-3DEA-7286-6CAB9F1590F5</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29D8008C-284A-2199-4374-1B9E821D7223" referredColumn="943B36C7-6062-B231-DCF8-1CD75BA73795"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="51D04694-A5CE-9956-BA9A-0EF359898C3C" name="Bill_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:17 UTC</createdTime>
+<generatorID>647E9DFF-FB40-6E54-9063-6EF651C0A296</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6D51265-C7F8-7F8E-28A2-D1D6BAA02D9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2BB7637-82B6-49D9-5740-8D177C2A41F5" name="Bill_Grupo_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>C6E2C200-05A5-50C0-940D-686D54EECC98</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F52EA94-CBDC-7718-054B-D95DA9BAA190"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92E3CA8F-1163-64E4-C16D-382536E2D76E" name="Bill_Usuario_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>08F22272-B16F-4F07-AF29-217B61AA798C</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E15C7DDF-6DE9-9B68-2F82-E9D21E9E1A62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF111EEF-3182-2442-9606-7BE968A54970" name="Responsables">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>56A447C4-B5C8-3394-DE1E-000B28276E88</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="2C11FBC7-0B96-A13E-0EAE-F321B92B0532" name="Bill_Tipo_Gasto_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-06 15:44:18 UTC</createdTime>
+<generatorID>E7BC9FF3-1502-E4FA-0F19-9E0EA6EAFD4E</generatorID>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54930283-93BF-F433-4E4B-5AD4FD374667"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

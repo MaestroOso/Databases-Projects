@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Usuarios_X_Grupo" directorySegmentName="seg_0" id="C74617BA-2824-1413-5A15-599E1CA5E927">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 21:56:00 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>25ECED73-9235-C229-5D7D-F0CC57F4086D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6AD4E8E6-A5F8-8573-A36C-A297407474B2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

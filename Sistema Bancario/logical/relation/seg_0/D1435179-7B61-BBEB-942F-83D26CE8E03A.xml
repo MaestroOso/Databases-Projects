@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Miembros_Transaccion" directorySegmentName="seg_0" id="D1435179-7B61-BBEB-942F-83D26CE8E03A">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 22:02:38 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>25ECED73-9235-C229-5D7D-F0CC57F4086D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>603EAC75-A72C-CEFD-A7CC-07F9CBB929FD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="CostoMiembro" id="8BD48B38-5E60-DAA3-B6EF-D862A1CF7FBF">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 22:03:09 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

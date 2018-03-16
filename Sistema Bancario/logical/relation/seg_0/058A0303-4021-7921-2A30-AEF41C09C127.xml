@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GrupoTransaccion" directorySegmentName="seg_0" id="058A0303-4021-7921-2A30-AEF41C09C127">
+<createdBy>Usuario</createdBy>
+<createdTime>2016-10-04 22:03:47 UTC</createdTime>
+<ownerDesignName>proyecto bases 2</ownerDesignName>
+<engineerTo>
+<item key="CA46864C-32E4-4A82-4A2B-EFB749F42B3F" value="true"/>
+</engineerTo>
+<sourcePk>6FE6479C-F5E2-673F-E67A-F7676B284A84</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6AD4E8E6-A5F8-8573-A36C-A297407474B2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>603EAC75-A72C-CEFD-A7CC-07F9CBB929FD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
